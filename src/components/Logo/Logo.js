@@ -1,14 +1,14 @@
 import React from "react";
 import Tilt from 'react-parallax-tilt';
+import face from './face.png';
 
 const Logo = () => {
     return(
-
-            <div className="ma7 mt1">
-                <div className="br2 shadow-2">👀</div>                            
-            </div>
-
-
+        <div className="ma4 mt0 fl w-thrid">
+            <Tilt scale={1.15} transitionSpeed={2500}>
+                <img alt="" src={face} width={200} height={200}/>
+            </Tilt>                           
+        </div>
     );
 }
 
