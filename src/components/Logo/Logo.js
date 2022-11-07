@@ -4,9 +4,11 @@ import face from './face.png';
 
 const Logo = () => {
     return(
-        <div className="ma4 mt0 fl w-thrid">
-            <Tilt scale={1.15} transitionSpeed={2500}>
-                <img alt="" src={face} width={200} height={200}/>
+        <div className="ma4 mt0">
+            <Tilt className="br2 shadow-2" options={{ max : 55 }} style={{ height: 150, width: 150 }}>
+                <div className="pa3">
+                    <img style={{paddingTop: '5px'}} alt="" src={face} height={100} width={100} />
+                </div>
             </Tilt>                           
         </div>
     );
